@@ -21,6 +21,7 @@ func main() {
 }
 
 func pinger(addr string) {
+	fmt.Println(addr)
 	p := fastping.NewPinger()
 	ra, err := net.ResolveIPAddr("ip4:icmp", addr)
 	if err != nil {
